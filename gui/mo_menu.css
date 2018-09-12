@@ -1,0 +1,82 @@
+/* m_menu */
+span{position:absolute;top:1%;left:10%;}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background:rgba(39,38,58,0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align:center;
+}
+
+.sidenav .box{height: 100%;width:80%;background-color:#27263a;padding-top:45px;}
+.sidenav .box > h2, h3{color:#fff;display:inline-block;padding-bottom:10px;}
+.sidenav .box .box_we{height:100%; width:100%; background-color:#fff;border-top:4px solid #9c9ba5;}
+.sidenav a {
+	text-align: center;
+    padding: 20px 15px 20px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+	padding-left:80px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+	line-height:50px;
+}
+
+.active, .accordion:hover {
+    background-color: #fff;border-bottom:2px solid #ffd267;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-right: 50px;
+	font-size:40px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color:#c2c1d0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    font-size: 80px;
+    margin-left: 50px;
+	color:#fff;
+}
+

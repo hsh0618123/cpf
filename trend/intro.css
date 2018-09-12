@@ -1,0 +1,10 @@
+@charset "urf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+.section{}
+.section .center{ }
+.section .center .ugly{padding-top:20%; }
+.section .center .ugly .sh{text-align:center; font-size:2.0em; font-weight:normal;padding-top:20px;}
+.section .center .ugly .no{text-align:left; font-family: 'Nanum Gothic', sans-serif;padding-left:40px;
+								padding-bottom:30px; padding-top:20px;}
+.sho{padding-left:50px;}

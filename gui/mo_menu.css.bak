@@ -1,0 +1,94 @@
+/* m_menu */
+span{position:absolute;top:1%;left:10%;}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background:rgba(39,38,58,0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align:center;
+}
+
+.sidenav .box{height: 100%;width:80%;background-color:#27263a;padding-top:45px;}
+.sidenav .box > h2, h3{color:#fff;display:inline-block;padding-bottom:10px;}
+.sidenav .box .box_we{height:100%; width:100%; background-color:#fff;border-top:4px solid #9c9ba5;}
+.sidenav a {
+	text-align: center;
+    padding: 20px 15px 20px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+	padding-left:80px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+	line-height:50px;
+}
+
+.active, .accordion:hover {
+    background-color: #fff;border-bottom:2px solid #ffd267;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-right: 50px;
+	font-size:40px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color:#c2c1d0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    font-size: 80px;
+    margin-left: 50px;
+	color:#fff;
+}
+
+.navbar{/*background:silver;*/  height:50px; font-size:16px;position:absolute;top:4.8%;left:30%;}
+.navbar .menu{}
+.navbar .menu > li{float:left;}
+.navbar .menu > li:after{content:"|";position:absolute;bottom:15px;padding:0 10px 0 10px; color:#fff;}
+.navbar .menu li a{display:block; width:120px; text-align:center; color:#fff; line-height:50px; margin-left:25px;}
+.navbar .menu .submenu{display:none;width:120px;margin-left:25px;}
+.navbar .menu .submenu > li > a{margin-left:0px;}
+.navbar .menu li:hover .submenu{display:block; background:rgba(39,38,58,0.7);}
+.navbar .menu > li:hover > a{color:#fff;background:#27263a; border-radius: 15px 15px 0px 0px; border-bottom:3px solid #ffd267;height:40px;}
+.submenu > li > a{border-bottom:1px solid #95959e;font-size:12px;}
+.submenu li:hover a{background:#27263a;font-size:14px;}
+.submenu li:last-child a{border:none;}

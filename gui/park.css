@@ -1,0 +1,256 @@
+@charset "utf-8"
+/* temp.css */
+@import url('https://fonts.googleapis.com/css?family=Chela+One|Nanum+Gothic');
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Chela One', cursive; */
+
+/* reset -------------------------------------------------------------------------------------------------------- */
+	*{margin: 0;padding: 0;box-sizing:border-box;}
+	li,ol,ul{list-style: none;}
+	img{border: none;vertical-align: top;}
+	a{text-decoration: none;}
+	body{font:normal 1em/1.5em 'Nanum Gothic', sans-serif;}
+
+/* layout -------------------------------------------------------------------------------------------------------- */
+	.header{background: #fff;border-top: 8px solid #000;border-bottom: 8px solid #000;}
+	.section{background: #fff;/*border:3px solid #000;*/min-height:500px;}
+	.footer{background: #000;}
+	.center{max-width: 1000px;margin: 0 auto;}
+	.mheader{	border-top: 4px solid #000; border-bottom: 4px solid #000; /**/}
+
+/* header -------------------------------------------------------------------------------------------------------- */
+	.header{}
+	.header .pchdr{padding: 15px;}
+	.header .pchdr:after{content: '';display: block;clear: both;}
+
+	.header .pchdr .logo{width: 15%; }
+	.header .pchdr .logo a{width: 100%;}
+	.header .pchdr .logo a img{width: 100%;}
+
+	.header .pchdr .gnb{width: 60%;float: left;/* border: 1px solid #000; */margin-top: 10px;}
+	.header .pchdr .gnb:after{display: block;clear: both;content: '';}
+	.header .pchdr .gnb li{float: left;width: 33%;}
+	.header .pchdr .gnb li a{display: block; padding: 10px;text-align: center;color:#000;font-weight: 600px;}
+	.header .pchdr .gnb li a:hover{color:#EFC939;transition:0.3s;}
+	.header .pchdr .gnb li .sub{position:absolute;background: #000; z-index:10;}
+	.header .pchdr .gnb li .sub li{width:51%;height: 50px;display:block;}
+	.header .pchdr .gnb li .sub li a{ color:#fff;position:relative; float:left;}
+	.header .pchdr .gnb li .sub li a:hover{color:red;}
+
+	.header .pchdr .schbox{width: 20%;float: left;margin-top: 15px;px;/* border: 1px solid #000; */}
+	.header .pchdr .schbox:after{display: block;clear: both;content: '';}
+	.header .pchdr .schbox .sch{border: 2px solid #000;outline: none;height: 34px;width: 80%;float: left;border-radius:10px 0 0 10px;padding: 0 10px;}
+	.header .pchdr .schbox a{float: left;}
+	.header .pchdr .schbox a #schicon{font-size: 30px;border: 2px solid #000;background:#000 ;border-radius:0 10px 10px 0;color: #fff;}
+	.header .pchdr .schbox a #schicon:hover{color:#EFC939;transition:0.3s;}
+/* section -------------------------------------------------------------------------------------------------------- */
+	.section{min-height:700px;}
+	.section .center{box-sizing:border-box;}
+	.section .center .banner{/*border:2px solid #000;*/box-sizing:border-box;}
+	.section .center .left{float:left; /*border:2px solid #000;*/ /*background:red;*/min-height:300px;margin-top:50px;
+								width:150px;}
+	.section .center .left:after{display: block;clear: both;content: '';}
+	.section .center .left li{width: 100%;padding:10px;font-weight: bold;}
+	.section .center .left li a{display: block; padding: 10px;text-align:center;color:#000;font-weight: 600px;}
+	.section .center .left li a:hover{color:red;transition:0.3s;background:pink;}
+	.section .center .right{margin-top:50px;margin-left:30px;/*border:2px solid #000;*/ float:left;height:570px;width:820px;}
+	.section .center .right .vibox{}
+	.section .center .right .vibox .vide{margin-top:30px;}
+	.section .center .right .mcont{display:none;}
+
+	
+
+/* mheader -------------------------------------------------------------------------------------------------------- */
+	.mheader{ display: none; /**/}
+	.mheader .mhrd{position: relative;padding: 15px;	}
+	.mheader .mhrd:after{display: block;clear: both;content: '';}
+
+	.mheader .mhrd .mmenu{position: absolute;top: 30%;}
+	.mheader .mhrd .mmenu #mmenuicon{font-size: 35px;cursor: pointer;color: green;	}
+
+	.mheader .mhrd .mlogo{width: 15%;margin: 0 auto;}
+	.mheader .mhrd .mlogo a{}
+	.mheader .mhrd .mlogo a img{width: 100%;}
+
+	.mheader .mhrd .mschbox{position: absolute;right: 0;top: 30%;/* border: 1px solid #000; */margin-right: 20px;}
+	.mheader .mhrd .mschbox:after{clear: both;display: block;content: '';}
+	.mheader .mhrd .mschbox #mschtoggle{display: none;}
+	.mheader .mhrd .mschbox .msch{float: left;height: 35px;display: none;border: 1px solid green;outline: none;border-radius: 10px 10px 10px 10px;padding: 0 10px;}
+	.mheader .mhrd .mschbox #mschicon{float: left;font-size: 35px;background: green;color: #fff;border-radius: 10px 10px 10px 10px ;cursor: pointer;}
+
+	.mheader .mhrd .mschbox #mschtoggle:checked ~ .msch,#mschicon{display: block;}
+	.mheader .mhrd .mschbox #mschtoggle:checked ~ #mschicon{border-radius:0 10px 10px 0;}
+
+	.mgnb{width: 0%;position: absolute;	overflow: hidden;}
+	.mgnb:after{display: block;clear: both;content: '';}
+	.mgnb li{float: left;width: 20%;	}
+	.mgnb li a{text-align: center;display: block;padding: 10px;color:#fff;font-weight: 600;background:green ;	}
+	.mgnb li a:hover{color:#EFC939;transition:0.3s;}
+
+/* footer -------------------------------------------------------------------------------------------------------- */
+	.footer{background:#fff;}
+	.footer .foocopy{/*padding: 15px; border: 1px solid #fff; */width:700px;margin:0 auto;}
+	.footer .foocopy:after{display: block;clear: both;content: '';}
+	.footer .foocopy li{color: #000;float: left;font-size: 0.75em;font-weight: 500;text-align: center;padding: 10px;}
+	.footer .foocopy li span{color: black;text-align:center;}
+	.footer .foocopy li a{color: #000;text-align: center;}
+	.footer .foocopy li a:hover{color: #aaa;}
+
+/* overlay menu -------------------------------------------------------------------------------------------------------- */
+	/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+/* ----------------------------------------------------------------------Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* ----------------------------------------------------------------------Slideshow container */
+
+/* rwd -------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width:1024px) {
+	.center{width:100%;}
+	.header{display: none;}
+	.mheader{display: block;}
+	.pccont{display: none;}
+	.mcont{display: block;}
+}
+@media only screen and (max-width:770px){
+	.center{width:100%;}
+	.mheader .mhrd .mmenu{top: 30%;}
+	.mheader .mhrd .mschbox{top: 30%;}
+	.mheader .mhrd .mlogo{width: 30%;}
+	.prev, .next,.text {font-size: 11px}
+	img{width:100%;}
+}
+
+
+
+@media only screen and (max-width:480px){
+	.center{width:100%;}
+	.mheader .mhrd .mmenu{top: 30%;}
+	.mheader .mhrd .mschbox{top: 30%;}
+	.mheader .mhrd .mlogo{width: 30%;}
+	.prev, .next,.text {font-size: 11px}
+	img{width:100%;}
+	.footer .center ul{width:100%; /*background:magenta;*/}
+	.footer .center .foocopy li{width:100%; height:30px;}
+	.footer .center .foocopy li a{height:30px;line-height:30px;}
+}

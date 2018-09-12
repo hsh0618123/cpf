@@ -1,0 +1,180 @@
+@charset "utf-8"
+/* temp.css */
+@import url('https://fonts.googleapis.com/css?family=Chela+One|Nanum+Gothic');
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Chela One', cursive; */
+
+/* reset -------------------------------------------------------------------------------------------------------- */
+	*{margin: 0;padding: 0;box-sizing:border-box;}
+	li,ol,ul{list-style: none;}
+	img{border: none;vertical-align: top;}
+	a{text-decoration: none;}
+	body{font:normal 1em/1.5em 'Nanum Gothic', sans-serif;}
+
+/* layout -------------------------------------------------------------------------------------------------------- */
+	.header{background: #fff;border-top: 8px solid #000;border-bottom: 8px solid #000;}
+	.section{background: #fff;/*border:3px solid #000;*/min-height:500px;}
+	.footer{background: #000;}
+	.center{max-width: 1000px;margin: 0 auto;}
+	.mheader{border-top: 4px solid #000; border-bottom: 4px solid #000; /**/}
+
+/* header -------------------------------------------------------------------------------------------------------- */
+	.header{}
+	.header .pchdr{padding: 15px;}
+	.header .pchdr:after{content: '';display: block;clear: both;}
+
+	.header .pchdr .logo{width: 15%; }
+	.header .pchdr .logo a{width: 100%;}
+	.header .pchdr .logo a img{width: 100%;}
+
+	.header .pchdr .gnb{width: 60%;float: left;/* border: 1px solid #000; */margin-top: 10px;}
+	.header .pchdr .gnb:after{display: block;clear: both;content: '';}
+	.header .pchdr .gnb li{float: left;width: 33%;}
+	.header .pchdr .gnb li a{display: block; padding: 10px;text-align: center;color:#000;font-weight: 600px;}
+	.header .pchdr .gnb li a:hover{color:#EFC939;transition:0.3s;}
+	.header .pchdr .gnb li .sub{position:absolute;background: blue; }
+	.header .pchdr .gnb li .sub li{width:51%;height: 50px;}
+	.header .pchdr .gnb li .sub li a{ color:#fff; position:relative;}
+	.header .pchdr .gnb li .sub li a:hover{color:red;}
+
+	.header .pchdr .schbox{width: 20%;float: left;margin-top: 15px;px;/* border: 1px solid #000; */}
+	.header .pchdr .schbox:after{display: block;clear: both;content: '';}
+	.header .pchdr .schbox .sch{border: 2px solid #000;outline: none;height: 34px;width: 80%;float: left;border-radius:10px 0 0 10px;padding: 0 10px;}
+	.header .pchdr .schbox a{float: left;}
+	.header .pchdr .schbox a #schicon{font-size: 30px;border: 2px solid #000;background:#000 ;border-radius:0 10px 10px 0;color: #fff;}
+	.header .pchdr .schbox a #schicon:hover{color:#EFC939;transition:0.3s;}
+
+/* mheader -------------------------------------------------------------------------------------------------------- */
+	.mheader{ display: none; /**/}
+	.mheader .mhrd{position: relative;padding: 15px;	}
+	.mheader .mhrd:after{display: block;clear: both;content: '';}
+
+	.mheader .mhrd .mmenu{position: absolute;top: 30%;}
+	.mheader .mhrd .mmenu #mmenuicon{font-size: 35px;cursor: pointer;color: green;	}
+
+	.mheader .mhrd .mlogo{width: 15%;margin: 0 auto;}
+	.mheader .mhrd .mlogo a{}
+	.mheader .mhrd .mlogo a img{width: 100%;}
+
+	.mheader .mhrd .mschbox{position: absolute;right: 0;top: 30%;/* border: 1px solid #000; */margin-right: 20px;}
+	.mheader .mhrd .mschbox:after{clear: both;display: block;content: '';}
+	.mheader .mhrd .mschbox #mschtoggle{display: none;}
+	.mheader .mhrd .mschbox .msch{float: left;height: 35px;display: none;border: 1px solid green;outline: none;border-radius: 10px 10px 10px 10px;padding: 0 10px;}
+	.mheader .mhrd .mschbox #mschicon{float: left;font-size: 35px;background: green;color: #fff;border-radius: 10px 10px 10px 10px ;cursor: pointer;}
+
+	.mheader .mhrd .mschbox #mschtoggle:checked ~ .msch,#mschicon{display: block;}
+	.mheader .mhrd .mschbox #mschtoggle:checked ~ #mschicon{border-radius:0 10px 10px 0;}
+
+	.mgnb{width: 0%;position: absolute;	overflow: hidden;}
+	.mgnb:after{display: block;clear: both;content: '';}
+	.mgnb li{float: left;width: 20%;	}
+	.mgnb li a{text-align: center;display: block;padding: 10px;color:#fff;font-weight: 600;background:green ;	}
+	.mgnb li a:hover{color:#EFC939;transition:0.3s;}
+
+/* footer -------------------------------------------------------------------------------------------------------- */
+	.footer{background:#fff;}
+	.footer .foocopy{/*padding: 15px; border: 1px solid #fff; */}
+	.footer .foocopy:after{display: block;clear: both;content: '';}
+	.footer .foocopy li{color: #000;float: left;font-size: 0.75em;font-weight: 500;text-align: center;padding: 10px;}
+	.footer .foocopy li span{color: black;text-align:center;}
+	.footer .foocopy li a{color: #000;text-align: center;}
+	.footer .foocopy li a:hover{color: #aaa;}
+
+/* m_menu */
+span{position:absolute;left:10%;}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background:rgba(39,38,58,0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align:center;
+}
+
+.sidenav .box{height: 100%;width:80%;background-color:#27263a;padding-top:45px;}
+.sidenav .box > h2, h3{color:#000;display:inline-block;padding-bottom:10px;}
+.sidenav .box .box_we{height:100%; width:100%; background-color:#fff;border-top:4px solid #9c9ba5;}
+.sidenav a {
+	text-align: center;
+    padding: 20px 15px 20px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+	padding-left:80px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+	line-height:50px;
+}
+
+.active, .accordion:hover {
+    background-color: #fff;border-bottom:2px solid #ffd267;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-right: 50px;
+	font-size:40px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color:#c2c1d0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    font-size: 80px;
+    margin-left: 50px;
+	color:#fff;
+}
+
+/* rwd -------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width:1024px) {
+	.header{display: none;}
+	.mheader{display: block;}
+}
+
+@media only screen and (max-width:768px) {
+
+}
+
+@media only screen and (max-width:480px){
+	.footer .foocopy li{width: 50%;}
+	.mheader .mhrd .mmenu{top: 30%;}
+	.mheader .mhrd .mschbox{top: 30%;}
+	.mheader .mhrd .mlogo{width: 30%;}
+}

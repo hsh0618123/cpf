@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>0822_coca</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen sliders navigation widh dots." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,sliders navigation, horizontal navigation,horizontal,navigation,dots" />
+	<meta name="Resource-type" content="Document" />
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	*{box-sizing:border-box;}
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Overwriting styles for the navigation dots (to place it where we want)
+	* --------------------------------------- */
+	.fp-slidesNav.bottom{
+		bottom: 25px;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+	#section2 h1{
+		color: #333;
+	}
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+
+
+
+<div id="fullpage">
+	<div class="section" id="section1">
+		<h4 class="home"><a href="https://www.coca-colacompany.com/?utm_source=annual-review-2017.com&utm_medium=referral&utm_campaign=Annual_Report">Company Home</a></h4>
+		<h4 class="reports"><a href="https://www.coca-colacompany.com/our-company/company-reports?utm_source=annual-review-2017.com&utm_medium=referral&utm_campaign=Annual_Report">Company Reports</a></h4>
+	    <div class="slide" id="slide1" data-anchor="slide1">
+			<div class="intro">
+				<h3>2017 Annual Review</h3>
+				<h1>THE COCA-COLA COMPANY</h1>
+				<p>beverages for life</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<p>	WE ARE</p>
+			<p>A TOTAL</p>
+			<p>BEVERAGE</p>
+			<p>COMPANY</p>
+			<img src="images/cokezero_3.png" width="10%" alt="" class="coke">
+			<img src="images/ades_2.png" width="10%" alt="" class="aqua">
+			<img src="images/cokezero_3.png" width="10%" alt="" class="sprite">
+			<img src="images/ades_2.png" width="10%" alt="" class="ades">
+		</div>
+
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<h3>Letter to Shareowners</h3>
+			<h1>"AS WE GROW, WE</h1>  
+			<h1>CREATE MORE</h1>
+			<h1>VALUE FOR OUR</h1>
+			<h1>PARTNERS."</h1>
+			<h4><a href="https://www.coca-colacompany.com/stories/2017-letter-from-muhtar-kent?utm_source=annual-review-2017.com&utm_medium=referral&utm_campaign=Annual_Report"><span>+</span>  Click to read Muhtar Kent's 2017 Letter</a></h4>
+		</div>
+		<div class="slide" id="slide4" data-anchor="slide4">
+			<h3>Letter to Shareowners</h3>
+			<h1>“WE CONTINUE TO</h1>  
+			<h1>BUILD UPON OUR</h1>
+			<h1>ICONIC BRANDS.”</h1>
+			<h4><a href="https://www.coca-colacompany.com/stories/2017-letter-from-james-quincey?utm_source=annual-review-2017.com&utm_medium=referral&utm_campaign=Annual_Report"><span>+</span>  Click to read Muhtar Kent's 2017 Letter</a></h4>
+		</div>
+		<div class="slide" id="slide5" data-anchor="slide5">
+			<h3>2017 Highlights</h3>
+			<div class="hlbox">
+				<div class="box">
+					<div class="boxl"><p class="tit">LIFTED AND SHIFTED BRANDS</p></div><!-- boxl -->
+					<div class="boxr">
+						<p>We scaled glaceau smartwater, ZICO coconut water and Appletiser into new markets. The expansion of our Venturing & Emerging Brands (VEB) model to Europe has shown early signs of success.</p>
+						<span><a href="https://www.coca-colacompany.com/stories/cokes-venturing-emerging-brands-chief-shares-3-tips-for-break?utm_source=annual-review-2017.com&utm_medium=referral&utm_campaign=Annual_Report">+</a></span>
+					</div><!-- boxr -->
+				</div>
+				<div class="box">
+					
+					<div class="boxl"><img src="images/cokezero_3.png" alt=""></div><!-- boxl -->
+					<div class="boxr"><p class="tit">ACCELERATED COCA-COLA ZERO SUGAR GROWTH GLOBALLY</p>
+						<p>We introduced a new formula for Coca-Cola Zero Sugar in 20 markets, including the United States, helping deliver double-digit revenue growth for the brand globally.</p>
+						<span><a href="https://www.coca-colacompany.com/coca-cola-unbottled/coca-cola-zero-sugar-gets-off-to-a-flying-start-in-norway?utm_source=annual-review-2017.com&utm_medium=referral&utm_campaign=Annual_Report">+</a></span>
+					</div><!-- boxr -->
+				</div>
+				<div class="box">
+					
+					<div class="boxl"><p class="tit">ACQUIRED ADES PLANT-BASED BEVERAGES</p>
+						<p>In Latin America, along with our bottling partners, we acquired AdeS, the leading soy-based beverage brand in the region. The brand is now being rolled out across key markets in Europe.</p>
+						<span><a href="https://www.coca-colacompany.com/coca-cola-unbottled/coca-cola-closes-acquisition-of-ades-plant-based-beverages-?utm_source=annual-review-2017.com&utm_medium=referral&utm_campaign=Annual_Report">+</a></span>
+					</div><!-- boxl -->
+					<div class="boxr"><img src="images/ades_2.png" alt=""> </div><!-- boxr -->
+				</div>
+				<div class="box">
+					
+					<div class="boxl">
+						<p>Topo Chico, a premium sparkling mineral water, and Barrilitos Aguas Fresca, a flavored, non?carbonated water beverage, were announced as part of the Company's portfolio in the United States. Both add to our growing list of low- and no-sugar drinks.</p>
+						<span><a href="https://www.coca-colacompany.com/stories/coca-cola_s-venturing---emerging-brands-welcomes-topo-chico-spar?utm_source=annual-review-2017.com&utm_medium=referral&utm_campaign=Annual_Report">+</a></span>
+					</div><!-- boxl -->
+					<div class="boxr"><p class="tit">INTRODUCED TOPO CHICO AND BARRILITOS</p> </div><!-- boxr -->
+				</div>			
+		</div><!-- hlbox -->
+		</div>
+	</div>
+<style>
+	#section1 .home{position: fixed;	bottom:20px;	left:10px;	font-weight: normal;	z-index: 10;}
+	#section1 .home a{color:#fff;}
+	#section1 .home a:hover{color:#E41E2A; transition:0.3s;}
+	#section1 .reports{position: fixed; bottom:20px;	right:10px;	font-weight: normal;	z-index: 10;}
+	#section1 .reports a{color:#fff;}
+	#section1 .reports a:hover{color:#E41E2A; transition:0.3s;}
+	#slide1{background:url(images/template1_cover.jpg) 50%; background-size:cover; position:relative;}
+	.intro h3{position:absolute; top:20px; width:100%; text-align:center; color:#fff; font-size:16px; font-weight:bold;}
+	.intro h1{font-size:3.5em; font-weight:bold}
+	.intro p{font-size:3.5em;}
+	.fp-controlArrow.fp-prev{border:none; top:40px;}
+	.fp-controlArrow.fp-next{border:none; top:40px; right:40px;}
+	.fp-controlArrow.fp-prev:after{ content:"←"; color:#fff; font-size:30px; color:red; }
+	.fp-controlArrow.fp-next:after{content:"→"; color:#fff; font-size:30px; color:red; }
+	#slide2{background: #F1F3F4; position:relative;}
+	#slide2 p{font-size:6em; color:#000; font-weight:bold;}
+	#slide2 .coke{position:absolute; top:10%; left:20%; animation-name: dd1; animation-duration: 3s;animation-iteration-count: infinite;}
+	#slide2 .aqua{position:absolute; top:50%; left:22%; animation-name: dd2; animation-duration: 3s;animation-iteration-count: infinite;}
+	#slide2 .sprite{position:absolute; top:50%; right:22%; animation-name: dd3; animation-duration: 3s;animation-iteration-count: infinite;}
+	#slide2 .ades{position:absolute; top:10%; right:20%; animation-name: dd4; animation-duration: 3s;animation-iteration-count: infinite;}
+	@keyframes dd1 {
+    0%{opacity:0;}
+	25%{opacity:1;}
+    50%{opacity:0;}
+    75%{opacity:1;}
+	100%{opacity:0;}
+		}
+	@keyframes dd2 {
+    0%{opacity:0;}
+    50%{opacity:1;}
+	75%{opacity:0;}
+	100%{opacity:1;}
+		}
+	@keyframes dd3 {
+    0%{opacity:0;}
+	25%{opacity:1;}
+    50%{opacity:0;}
+    75%{opacity:1;}
+	100%{opacity:0;}
+		}
+	@keyframes dd4 {
+    0%{opacity:0;}
+    50%{opacity:1;}
+	75%{opacity:0;}
+	100%{opacity:1;}
+		}
+	#slide3{background:url(images/template1_muhtar.jpg) 100% 100%; background-size:cover; position:relative;}
+	#slide3 h1{font-size: 5em; color:#E41E2A; font-weight:bold;}
+	#slide3 h3{position: absolute; width: 100%;	text-align: center;	top:16px;	font-size: 18px; color:#E41E2A; font-weight:bold;}
+	#slide3 h4 a{font-size: 25px; color:#E41E2A; font-weight: normal;}
+	#slide3 h4 a span{border:2px solid #E41E2A; width: 30px; height: 30px; line-height:30px; text-align: center; border-radius:50%; display: inline-block;}
+	#slide4{background:url(images/template1_james.jpg) 100% 100%; background-size:cover; position:relative;}
+	#slide4 h1{font-size: 5em; color:#E41E2A; font-weight:bold;}
+	#slide4 h3{position: absolute; width: 100%;	text-align: center;	top:16px;	font-size: 18px; color:#E41E2A; font-weight:bold;}
+	#slide4 h4 a{font-size: 25px; color:#E41E2A; font-weight: normal;}
+	#slide4 h4 a span{border:2px solid #E41E2A; width: 30px; height: 30px; line-height:30px; text-align: center; border-radius:50%; display: inline-block;}
+	#slide5{background: #F1F3F4;
+	position: relative;}
+
+#slide5 h3{position: absolute;
+	width: 100%;
+	text-align: center;
+	top:16px;
+	font-size: 18px;
+	color:#E41E2A;}
+
+#slide5 .hlbox{/*border:1px solid red;*/
+	width: 1200px;
+	
+	/*height: 75%;*/
+	/*margin-left: 15%;*/
+	overflow: auto;
+	margin: 100px auto;}
+#slide5 .hlbox .box{/*border:1px solid blue;*/
+	float:left;
+	width:50%;
+	overflow: hidden;
+	height: 50%;}
+#slide5 .hlbox .box .boxl{float: left;	/*border: 1px solid #000;*/	width: 50%;	height: 100%;	padding-right: 15px;}
+#slide5 .hlbox .box .boxr{float: right; /*border: 1px solid #000;*/ width: 50%; height: 100%;	padding-left: 15px;}
+#slide5 .hlbox .box .boxl img,
+#slide5 .hlbox .box .boxr img{max-width: 80%;
+	vertical-align: top;
+	 max-height: 100%;}
+#slide5 .hlbox .box p{text-align: left;
+	font-size: 14px;} 
+#slide5 .hlbox .box span a{border:1px solid #000;
+	width: 25px;
+	height: 25px;
+	line-height:25px;
+	text-align: center;
+	border-radius:50% ;		
+	display: inline-block;
+	font-size: 25px;
+	float:left;
+	margin-top: 10px;
+	color: #000;}
+#slide5 .hlbox .box span a:hover{border:1px solid #fff;
+	color:#fff; transition:0.5s;	}
+.tit{font-size: 18px !important;
+	color:#E41E2A;
+	font-weight: bold;
+	text-align: left;	
+	margin-bottom: 10px;}
+
+	
+	@media screen and (max-width:768px){
+		.intro h3{font-size:16px; font-weight:bold;}
+		.intro h1{font-size:2.5em; font-weight:bold}
+		.intro p{font-size:2em;}
+		#slide2 p{font-size:3em;}
+		#slide2 .coke{top:30%; left:20%;}
+		#slide2 .aqua{top:60%; left:22%; }
+		#slide2 .sprite{top:60%; right:22%; }
+		#slide2 .ades{top:30%; right:20%;  }
+		#slide5 .hlbox{width:80%;}
+		#slide3 h1{font-size:3em;}
+		#slide3 h4 a{font-size:18px;}
+		#slide4 h1{font-size:3em;}
+		#slide4 h4 a{font-size:18px;}
+		#slide5 .hlbox .box{float:none;	width:100%; height: auto; margin-bottom: 50px;}
+	}
+	@media screen and (max-width:480px){
+		.intro h3{font-size:16px; font-weight:bold;}
+		.intro h1{font-size:2em; font-weight:bold}
+		.intro p{font-size:1.5em;}
+		#slide2 .coke{top:30%; left:0; width:25%;}
+		#slide2 .aqua{top:62%; left:10%; width:25%;}
+		#slide2 .sprite{top:62%; right:0%; width:25%;}
+		#slide2 .ades{top:30%; right:5%; width:25%; }
+		#slide5 .hlbox{width:80%;}
+		#slide3 h1{font-size:2em; text-align:left; padding-left:20px;}
+		#slide3 h4 a{font-size:15px; float:left; padding-left:20px;}
+		#slide3 h4 a span{width: 18px; height:18px; line-height:15px;}
+		#slide4 h1{font-size:2em; text-align:left; padding-left:20px;}
+		#slide4 h4 a{font-size:15px; float:left; padding-left:20px;}
+		#slide4 h4 a span{width: 18px; height:18px; line-height:15px;}
+		#slide5 .hlbox .box{float:none;	width:100%; height: auto; margin-bottom: 50px;}
+	}
+</style>
+
+
+<script type="text/javascript" src="dist/fullpage.js"></script>
+<script type="text/javascript" src="examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
+        slidesNavigation: false,
+		scrollOverflow: true,
+    });
+	$(document).ready(function(){
+		$("#slide3 h4 a").mouseover(function(){
+			$("#slide3 h4 a").css({"color":"#fff","transition":"0.3s"});
+			$("#slide3 h4 a span").css({"border":"1px solid #fff","color":"#fff","transition":"0.1s"});
+		});	
+		$("#slide3 h4 a").mouseleave(function(){
+			$("#slide3 h4 a").css({"color":"#E41E2A","transition":"0.3s"});
+			$("#slide3 h4 a span").css({"border":"1px solid #E41E2A","color":"#E41E2A","transition":"0.3s"});
+		});	
+	});
+		$(document).ready(function(){
+		$("#slide4 h4 a").mouseover(function(){
+			$("#slide4 h4 a").css({"color":"#fff","transition":"0.3s"});
+			$("#slide4 h4 a span").css({"border":"1px solid #fff","color":"#fff","transition":"0.1s"});
+		});	
+		$("#slide4 h4 a").mouseleave(function(){
+			$("#slide4 h4 a").css({"color":"#E41E2A","transition":"0.3s"});
+			$("#slide4 h4 a span").css({"border":"1px solid #E41E2A","color":"#E41E2A","transition":"0.3s"});
+		});	
+	});
+</script>
+
+</body>
+</html>

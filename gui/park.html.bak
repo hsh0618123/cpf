@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>park</title>
+  <link rel="stylesheet" href="temp.css">
+  <link rel="stylesheet" href="park.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ </head>
+ <body>
+  <header class="header">
+	<div class="center">
+		<div class="pchdr">
+			<h1 class="logo"><a href="main.html"><img src="park/logo.jpg" width="133" height="61" border="0" alt=""></a></h1>
+			<ul class="gnb">
+				<li><a href="park.html">공원가이드</a>
+					<ul class="sub">
+						<li><a href="park.html">홍보영상</a></li>
+						<li><a href="park_sub1.html">안내도</a></li>
+						<li><a href="park_sub2.html">이용안내</a></li>
+						<li><a href="park_sub3.html">놀이 편의시설</a></li>
+					</ul>
+				</li>
+				<li><a href="eco.html">생태즐기기</a>
+					<ul class="sub">
+							<li><a href="eco.html">생태공원소개</a></li>
+							<li><a href="eco_sub1.html">장미광장</a></li>
+							<li><a href="eco_sub2.html">생태공원갤러리</a></li>
+						</ul>
+				</li>
+				<li><a href="his.html">역사즐기기</a>
+					<ul class="sub">
+						<li><a href="his.html">몽촌역사이야기</a></li>
+						<li><a href="his.html">주변유적지안내</a></li>
+					</ul>
+				</li>
+
+			</ul>
+			<div class="schbox">
+				<input type="text" class="sch" value="search..." onclick="this.value='';">
+				<a href="#"><i class="material-icons" id="schicon">&#xe8b6;</i></a>
+			</div>
+		</div><!-- pchdr -->
+	</div><!-- center -->
+  </header><!-- header -->
+
+  <div class="mheader">
+	<div class="center">
+		<div class="mhrd">
+			<span class="mmenu" onclick="openNav()"><i class="fa" id="mmenuicon">&#xf039;</i></span>
+			<h1 class="mlogo"><a href="#"><img src="park/logo.jpg" width="150" height="50" border="0" alt=""></a></h1>
+			<div class="mschbox">
+					<input type="checkbox" id="mschtoggle" >
+					<input type="text" class="msch" value="search..." onclick="this.value='';">
+					<label for="mschtoggle"><i class="material-icons" id="mschicon">&#xe8b6;</i></label>
+			</div><!-- mschbox -->
+		</div><!-- mhrd -->
+	</div><!-- center -->
+		
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <li class="pak"><a href="park.html">공원가이드</a></li>
+		  <li class="sang"><a href="eco.html">생태 즐기기</a></li>
+		  <li class="sa"><a href="his.html">역사 즐기기</a></li>
+
+		</div>
+  </div><!-- mheader -->
+
+
+  <section class="section">
+	<div class="center">
+		<div class="banner"><img src="park/banner.png" width="1000" height="113" border="0" alt="banner"></div><!-- banner -->
+		<div class="left">
+			<li><a href="park.html">홍보영상</a></li>
+			<li><a href="park_sub1.html">안내도</a></li>
+			<li><a href="park_sub2.html">이용정보</a></li>
+			<li><a href="park_sub3.html">놀이 편의시설</a></li>
+		</div><!-- left -->
+		<div class="right">
+			<h2>홍보영상</h2>
+			<div class="pccont">	
+			<div class="vibox">
+			<iframe class="vide" width="560" height="315" src="https://www.youtube.com/embed/kxyhn4qJXfE" 
+				frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+			</div><!-- vibox -->
+			<h3 class="htw">★보고싶은 영상을 클릭하세요.★ </h3>
+			
+			<div class="playlist">
+				<div class="slider">
+					<img src="park/video1.png" data-src="https://www.youtube.com/embed/o8y1ZsDWs8U" alt="">
+					<img src="park/video2.png" data-src="https://www.youtube.com/embed/7SUs-CE0EtE" alt="">
+					<img src="park/video3.png" data-src="https://www.youtube.com/embed/FC5yJLgPrnw" alt="">
+					
+				</div>
+			</div>
+		</div><!-- pccont -->
+
+		<div class="mcont">
+			<div class="imgbox">
+				<img src="park/video1.png" data-src="https://www.youtube.com/embed/o8y1ZsDWs8U" alt="">
+				<img src="park/video2.png" data-src="https://www.youtube.com/embed/7SUs-CE0EtE" alt="">
+				<img src="park/video3.png" data-src="https://www.youtube.com/embed/FC5yJLgPrnw" alt="">
+				<div class="contol">
+					<iframe src="" class="mif"></iframe>
+				</div><!-- contol -->
+				
+			</div><!-- imgbox -->
+			
+		</div><!-- mcont -->
+	</div><!-- center -->
+  </section><!-- section -->
+
+  <footer class="footer">
+	<div class="center">
+		<ul class="foocopy">
+			<li><a href="#">오시는길</a></li>
+			<li><a href="#">전화번호</a></li>
+			<li><a href="#">개인정보처리방침</a></li>
+			<li><a href="#">이메일</a></li>
+			<li><a href="#">저작권정책</a></li>
+			<li><span>COPYRIGHT&copy;2011 BY KSPO ALL RIGHTS RESERVED</span></li>
+		</ul>
+	</div><!-- center -->
+  </footer><!-- footer -->
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="temp.js"></script>
+  <script src="park_vi.js"></script>
+  <style type="text/css">
+  .section .center .right h2{text-align:center;}
+	/* pc ----------------------------------------------------------------------- */
+	.vibox{padding: 10px 0;}
+	.vibox iframe{float:left;vertical-align: top;}
+
+	.htw{text-align: center;padding: 30px;}
+
+	.playlist{padding: 5px 0;width: 600px; margin: 10px 0; }
+	.playlist .slider{height: 140px;}
+	.playlist .slider:after{display: block;clear: both;content: '';}
+	.playlist .slider img{float: left;width: 150px;height:140px;margin-left:20px;
+						margin-right: 15px;cursor: pointer;border-radius:10px;margin-top:15px;}
+/* pc ----------------------------------------------------------------------- */
+
+/* m ----------------------------------------------------------------------- */
+	.mcont{display: none;}
+	.mconttxt{text-align: center; padding: 10px;}
+	.mcont .imgbox{padding: 5px;}
+	.mcont .imgbox:after{display: block;clear: both;content: '';}
+	.mcont .imgbox img{width: 70%;height: 150px;float: left;border-radius:10px;margin-bottom: 10px;}
+
+	.contol{position: fixed;top: 0;left: 0;background: rgba(0,0,0,0.6);width: 100%;height: 100%;display: none;}
+	.contol .mif{width: 100%;position: relative;top: 20%;height: 60%;border: none;	}
+/* m ----------------------------------------------------------------------- */
+	/* rwd ----------------------------------------------------------------------- */
+	@media only screen and (max-width:1024px){
+		.section{box-sizing:border-box;}
+		.section .center h2{display:none;}
+		.section .center .right .pccont{display: none;}
+		.section .center .banner{display:none;}
+		.section .center .left{width:150px; }
+		.section .center .right{width:350px;}
+		.section .center .right .mcont{display: block;width:100%;}
+		.section .center .right .mcont .imgbox{display:block; float:left;}
+	}
+	@media only screen and (max-width:480px){
+		.section{box-sizing:border-box;}
+		.section .center h2{display:none;}
+		.section .center .right .pccont{display: none;}
+		.section .center .banner{display:none;}
+		.section .center .left{display:none;}
+		.section .center .right{width:150px; height:150px;}
+		.section .center .right .mcont{display: block;width:100%;}
+		.section .center .right .mcont .imgbox{display:block; float:left;}
+		.
+	}
+  </style>
+ </body>
+</html>

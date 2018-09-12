@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>park_sub2</title>
+  <link rel="stylesheet" href="temp.css">
+  <link rel="stylesheet" href="park.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ </head>
+ <body>
+  <header class="header">
+	<div class="center">
+		<div class="pchdr">
+			<h1 class="logo"><a href="main.html"><img src="park/logo.jpg" width="133" height="61" border="0" alt=""></a></h1>
+			<ul class="gnb">
+				<li><a href="park.html">공원가이드</a>
+					<ul class="sub">
+						<li><a href="park.html">홍보영상</a></li>
+						<li><a href="park_sub1.html">안내도</a></li>
+						<li><a href="park_sub2.html">이용안내</a></li>
+						<li><a href="park_sub3.html">놀이 편의시설</a></li>
+					</ul>
+				</li>
+				<li><a href="eco.html">생태즐기기</a>
+					<ul class="sub">
+							<li><a href="eco.html">생태공원소개</a></li>
+							<li><a href="eco_sub1.html">장미광장</a></li>
+							<li><a href="eco_sub2.html">생태공원갤러리</a></li>
+						</ul>
+				</li>
+				<li><a href="his.html">역사즐기기</a>
+					<ul class="sub">
+						<li><a href="his.html">몽촌역사이야기</a></li>
+						<li><a href="his.html">주변유적지안내</a></li>
+					</ul>
+				</li>
+
+			</ul>
+			<div class="schbox">
+				<input type="text" class="sch" value="search..." onclick="this.value='';">
+				<a href="#"><i class="material-icons" id="schicon">&#xe8b6;</i></a>
+			</div>
+		</div><!-- pchdr -->
+	</div><!-- center -->
+  </header><!-- header -->
+
+  <div class="mheader">
+	<div class="center">
+		<div class="mhrd">
+			<span class="mmenu" onclick="openNav()"><i class="fa" id="mmenuicon">&#xf039;</i></span>
+			<h1 class="mlogo"><a href="#"><img src="park/logo.jpg" width="150" height="50" border="0" alt=""></a></h1>
+			<div class="mschbox">
+					<input type="checkbox" id="mschtoggle" >
+					<input type="text" class="msch" value="search..." onclick="this.value='';">
+					<label for="mschtoggle"><i class="material-icons" id="mschicon">&#xe8b6;</i></label>
+			</div><!-- mschbox -->
+		</div><!-- mhrd -->
+	</div><!-- center -->
+		
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="park.html">공원가이드</a>
+		  <a href="eco.html">생태 즐기기</a>
+		  <a href="his.html">역사 즐기기</a>
+
+		</div>
+  </div><!-- mheader -->
+
+
+  <section class="section">
+	<div class="center">
+		<div class="banner"><img src="park/banner.png" width="1000" height="113" border="0" alt="banner"></div><!-- banner -->
+		<div class="left">
+			<li><a href="park.html">홍보영상</a></li>
+			<li><a href="park_sub1.html">안내도</a></li>
+			<li><a href="park_sub2.html">이용정보</a></li>
+			<li><a href="park_sub3.html">놀이 편의시설</a></li>
+		</div><!-- left -->
+		<div class="right">
+			<h2>공원이용정보</h2>
+			<p>도심속의 오아시스, 올림픽 공원 이용정보를 알려드립니다.</p>
+			<img src="park/ho.png" width="500" height="330" border="0" alt="">
+			<div class="eti">
+				<h3>올팍 에티켓</h3>
+				<p>
+				흡연을 삼가하여 주십시오.<br>
+				공원 내에서 다른 관람객들에게 피해가 되는 행동은 삼가하여 주십시오.<br>
+				(고성방가, 취침, 과격한 행동, 잔디나 꽃밭 훼손, 바퀴가 부착된 신발 착용 등)<br>
+				상업용 사진, 영화(CF) 촬영 시에는 사전 승인을 받으시기 바랍니다. (문의전화 : 02-2180-3514~6)<br>
+				자전거 및 인라인 이용시 과속을 자제하여 주십시오. 토성 내 산책로는 자전거와 인라인의 통행을 제한하고 있습니다.<br>
+				야생동물의 보호를 위해 무분별한 열매 채취를 삼가하여 주십시오.<br>
+				애완견 출입시 위생과 안전사고 예방을 위하여 반드시 개 목줄과 입 가리개, 배변봉투를 지참하여 이용해 주시기 바랍니다.
+				</p>
+			</div><!-- eti -->
+			<div class="moon">
+				<h3>공원 이용문의</h3>
+				<p>
+				쓰레기 규격 봉투를 구매하여 지정된 장소에 배출하시기 바랍니다.<br>
+				특정 종교단체의 집회 및 특정단체의 영리 행위는 불가능 합니다.<br>
+				식사는 도시락 외에는 반입이 불가능 합니다.<br>
+				나무 훼손, 불을 피우는 행위, 지정된 장소 외 주차 행위는 일체 금지합니다.<br>
+				심한 소름을 일으키는 행위는 일체 금지합니다.
+				</p>
+			</div>
+	</div><!-- center -->
+  </section><!-- section -->
+
+  <footer class="footer">
+	<div class="center">
+		<ul class="foocopy">
+			<li><a href="#">오시는길</a></li>
+			<li><a href="#">전화번호</a></li>
+			<li><a href="#">개인정보처리방침</a></li>
+			<li><a href="#">이메일</a></li>
+			<li><a href="#">저작권정책</a></li>
+			<li><span>COPYRIGHT&copy;2011 BY KSPO ALL RIGHTS RESERVED</span></li>
+		</ul>
+	</div><!-- center -->
+  </footer><!-- footer -->
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="temp.js"></script>
+  <script src="park_vi.js"></script>
+  <style type="text/css">
+	.section{min-height:1000px;}
+	.section .center .right h2{text-align:center;}
+	.section .center p{font-size:13px;margin-top:10px;}
+	.section .center .eti{background:#eee;margin-top:5px;}
+	.section .center .moon{border:1px solid #000;margin-top:15px;}
+	/* rwd ----------------------------------------------------------------------- */
+	@media only screen and (max-width:1024px){
+		.section{box-sizing:border-box;}
+		.section .center p{font-weight: bold; font-size:10px;}
+		.section .center h2{}
+		.section .center img{display:none;}
+		.section .center .right .pccont{display: none;}
+		.section .center .banner{display:none;}
+		.section .center .left{width:70px; }
+		.section .center .right{width:210px;}
+		.section .center .right .mcont{display: block;width:100%;}
+		.section .center .right .mcont .imgbox{display:block; float:left;}
+	}
+	@media only screen and (min-width:760px) and (max-width:1000px){
+		.section{box-sizing:border-box;}
+		.section .center p{font-weight: bold; font-size:12px;}
+		.section .center h2{}
+		.section .center .right .pccont{display: none;}
+		.section .center .banner{display:none;}
+		.section .center .left{width:130px; }
+		.section .center .right{width:550px;}
+		.section .center .right .mcont{display: block;width:100%;}
+		.section .center .right .mcont .imgbox{display:block; float:left;}
+	}
+	@media only screen and (max-width:480px){
+		.section{box-sizing:border-box;}
+		.section .center h2{}
+		.section .center .right .pccont{display: none;}
+		.section .center .banner{display:none;}
+		.section .center .left{display:none;}
+		.section .center .right{width:100%;}
+		.section .center .right .mcont{display: block;width:100%;}
+		.section .center .right .mcont .imgbox{display:block; float:left;}
+	}
+  </style>
+ </body>
+</html>

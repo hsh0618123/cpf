@@ -1,0 +1,33 @@
+@charset "urf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:700');
+html,body{height:100%}
+
+.section{}
+.section .center{background:none;padding-top:10%;}
+.section .center .s_ar{border:5px solid red;margin-bottom:0.5em; overflow:hidden;}
+.section .center .s_ar:last-child{margin-bottom:0px;}
+
+.section .center .s_ar .s_ar_l{width:20%; background:#fafafa;float:left;}
+.section .center .s_ar .s_ar_r{width:80%; /*background:chocolate;*/ float:right;}
+
+.section .center .s_ar:nth-child(1){border:none;}
+.section .center .s_ar:nth-child(1) .s_ar_l{width:23%; padding:1em; box-sizing:border-box; 
+												border-right:3px solid #ccc;}
+.section .center .s_ar:nth-child(1) .s_ar_l .sub_tit{border:1px dashed blue;}
+.section .center .s_ar:nth-child(1) .s_ar_l .sub_tit img{width:100%;vertical-align:top;}
+.section .center .s_ar:nth-child(1) .s_ar_l .lnb{/*border:1px dashed blue;*/ margin:30px 0px 30px 0px;
+																font-family: 'Nanum Gothic', sans-serif; font-size:1.2em;}
+.section .center .s_ar:nth-child(1) .s_ar_l .lnb li{width:100%; margin-bottom:0.3em;
+														background:url(images/left_arrow.jpg); background-repeat:no-repeat;
+														background-position:left center; padding-left:5px; margin-left:20px;
+														margin-right:20px;}
+.section .center .s_ar:nth-child(1) .s_ar_l .lnb li a{width:70%; /*background:yellow;*/ display:block;
+																	font-size:0.8em; color:#333; font-weight:500;
+																	/*bold 진하기를 숫자로도 줄수있다*/}
+.section .center .s_ar:nth-child(1) .s_ar_l .lnb li a:hover{color:hotpink;}
+.sub_active{color:hotpink;}
+.section .center .s_ar:nth-child(1) .s_ar_l .sub_ad{}
+.section .center .s_ar:nth-child(1) .s_ar_r{width:77%; padding:1em; box-sizing:border-box;}
+.section .center .s_ar:nth-child(1) .s_ar_r .s_ar_r_tit{font-weight:500; font-size:1.5em; margin-bottom:1em;}
+.section .center .s_ar:nth-child(1) .s_ar_r .s_ar_r_tit_sm{color:lightblue; font-weight:bold; margin-bottom:0.5em;}
+.section .center .s_ar:nth-child(1) .s_ar_r .s_ar_r_tit_cont{font-size:0.8em; color:#333; letter-spacing:-3px;}
